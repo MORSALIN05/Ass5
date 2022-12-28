@@ -1,5 +1,5 @@
 const eachPlayer1 = document.querySelectorAll('.each-player1 h5');
-console.log(eachPlayer1.);
+//console.log(eachPlayer1.);
 let targetEvent;
 function playerEntry() {
     const parentNode = targetEvent.parentNode;

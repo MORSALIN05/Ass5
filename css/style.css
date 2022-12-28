@@ -15,23 +15,6 @@ h1 {
 }
 
 /* .box {
-    width: 10px;
-    height: 25px;
-    margin-left: 70%;
-    padding-left: 40%;
-    border: solid 3px rgb(85, 40, 23);
-    border-color: rgb(214, 75, 20) transparent transparent transparent;
-    border-radius: 10%/20px 30px 0 0;
-
-} */
-/* .box {
-    width: 50px;
-    height: 30px;
-    border: solid 5px rgb(146, 42, 42);
-    border-color: transparent transparent rgb(223, 30, 30) transparent;
-    border-radius: 0 0 60px 50%/30px;
-} */
-.box {
     position: absolute;
     left: 63.62%;
     right: 22.13%;
@@ -40,7 +23,7 @@ h1 {
 
     background: #FFFFFF;
     transform: matrix(0.96, 0.31, -0.29, 0.95, 0, 0);
-}
+} */
 
 .main-color {
     background-color: rgb(37, 31, 31);
