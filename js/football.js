@@ -1,37 +1,15 @@
+const eachPlayer1 = document.querySelectorAll('.each-player1 h5');
+console.log(eachPlayer1.);
+let targetEvent;
+function playerEntry() {
+    const parentNode = targetEvent.parentNode;
+    const children = parentNode.children;
+    const children1 = children[0].innerText;
 
-// const orderList1 = document.getElementById('ordered-list');
-// const childrenListOl = orderList1.childNodes;
-// console.log(childrenListOl.length);
-// function playerEntry() {
-//     const playerButton = event.target.parentNode;
-//     const children = playerButton.children;
-//     const children1 = children[0].innerText;
-
-//     const li = document.createElement('li');
-//     li.innerText = children1;
-//     return li;
-// }
-// console.log('must use one or more function for BONUS Marks');
-// //alert('must use one or more function for BONUS Marks')
-// document.getElementById('select-player').addEventListener('click', function (event) {
-//     const selectButton = event.target;
-//     //console.log(selectButton);
-//     selectButton.disabled = true;
-//     let colorAsString = '#FEC6F0';
-//     selectButton.style.backgroundColor = colorAsString;
-//     const liChild = playerEntry();
-//     const ol = document.getElementById('ordered-list');
-//     ol.appendChild(liChild);
-//     var liList = document.querySelectorAll('li');
-//     if (liList.length > 5) {
-//         ol.removeChild(ol.lastElementChild);
-//         selectButton.disabled = false;
-//         alert('Already You have bought Five Player');
-//         //selectButton.enabled = true;
-//         let colorAsString1 = 'rgba(42, 121, 211, 0.884)';
-//         selectButton.style.backgroundColor = colorAsString1;
-//     }
-// })
+    const li = document.createElement('li');
+    li.innerText = children1;
+    return li;
+}
 document.getElementById('calculate-button').addEventListener('click', function () {
     const perPlayerValue = document.getElementById('single-player-expense').value;
     //console.log(perPlayerValue);
@@ -53,18 +31,18 @@ console.log(selectButton)
 
 for (var i = 0; i < selectButton.length; i++) {
     selectButton[i].addEventListener('click', function (event) {
-        const targetEvent = event.target;
+        targetEvent = event.target;
         console.log(targetEvent);
+
         targetEvent.disabled = true;
-        const parentNode = targetEvent.parentNode;
-        console.log(parentNode);
-        const children = parentNode.children;
-        const children1 = children[0].innerText;
-        console.log(children1);
-        const li = document.createElement('li');
-        li.innerText = children1;
+
+        let colorAsString1 = 'rgb(158, 65, 65)';
+        targetEvent.style.backgroundColor = colorAsString1;
+        const liChildAll = playerEntry();
+        // let colorAsString1 = 'rgba(42, 121, 211, 0.884)';
+        // targetEvent.style.backgroundColor = colorAsString1;
         const ol = document.getElementById('ordered-list');
-        ol.appendChild(li);
+        ol.appendChild(liChildAll);
         var liList = document.querySelectorAll('li');
 
         if (liList.length > 5) {
